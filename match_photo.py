@@ -6,7 +6,7 @@ import cv2
 import tkinter as tk
 
 # Directory containing known faces
-known_faces_dir = "C:\BEIA\datasets"
+known_faces_dir = "C:\...\datasets"
 
 # Load the reference dataset (known faces)
 known_faces = []
@@ -28,7 +28,7 @@ for filename in os.listdir(known_faces_dir):
         known_face_names.append(person_name)
 
 # Load the input image you want to compare
-input_image = face_recognition.load_image_file(r"C:\BEIA\1.JPEG")
+input_image = face_recognition.load_image_file(r"C:\...\1.JPEG")
 input_face_locations = face_recognition.face_locations(input_image)
 input_face_encodings = face_recognition.face_encodings(input_image, input_face_locations)
 
